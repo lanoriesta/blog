@@ -1,0 +1,247 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+//Font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&family=Ubuntu&display=swap");
+
+$colors: (
+  $black: #121212,
+  $white: #fff,
+  $gray-100: #808080,
+  $gray-200: #d8d8d8,
+  $yellow-200: #ffff70,
+);
+
+body {
+  background-color: #333333;
+  background-image: url("https://transparenttextures.com/patterns/45-degree-fabric-light.png");
+  color: map-get($colors, $white);
+
+  font-family: "Roboto", sans-serif;
+  // font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 10rem;
+
+  text-shadow: 2px 10px 8px rgba($color: #000000, $alpha: 0.3);
+}
+
+hr {
+  margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 3px;
+  opacity: 0.6;
+}
+
+// Header
+.navbar {
+  background-color: map-get($colors, $black) !important;
+  padding: 20px;
+
+  font-weight: 200;
+  letter-spacing: 5px;
+}
+
+.navbar img {
+  width: 34px;
+  margin-right: 40px;
+}
+
+.navbar .nav-item {
+  padding: 0 13px;
+  text-decoration: none;
+  color: map-get($colors, $white);
+}
+
+.navbar .nav-link:hover {
+  opacity: 0.6;
+}
+
+.active {
+  opacity: 0.6 !important;
+}
+
+// HOME
+
+.home-container .home-desc {
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.5;
+  letter-spacing: 2px;
+}
+
+.home-container .btn {
+  background-color: map-get($colors, $black);
+  border: 3px solid map-get($colors, $black);
+  color: map-get($colors, $white);
+  padding: 20px 30px;
+  margin: 20px 0;
+  width: 20%;
+
+  font-weight: 200;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 3px solid map-get($colors, $black);
+  color: map-get($colors, $black) !important;
+
+  font-weight: 500;
+}
+
+// ABOUT
+.about-container p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.5;
+  letter-spacing: 2px;
+}
+
+//CONTACT
+
+.contact-container .contactInfo-container {
+  margin: 20px 0;
+}
+
+.contact-container .contactInfo-container p {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: map-get($colors, $white);
+  letter-spacing: 3px;
+}
+.contactInfo-container > p > a {
+  color: map-get($colors, $white);
+  text-decoration: none;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.contact-container .contactInfo-container p:nth-child(3) {
+  display: inline-block;
+}
+
+.contactSocial-container {
+  display: inline-block;
+}
+
+.contact-container .contactInfo-container .contactSocial-container a > img {
+  padding-left: 10px;
+}
+
+// CREATE BLOG
+
+.createblog-container {
+}
+
+.createblog-container .form {
+  margin: 40px 0;
+}
+
+.createblog-container input,
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 3px 10px #333333;
+
+  font-size: 1.4rem;
+  font-weight: 300;
+
+  padding: 15px;
+  resize: none;
+}
+
+.createblog-container input {
+  margin-bottom: 20px;
+}
+
+.createblog-container textarea {
+  height: 25vh;
+}
+
+.createblog-container .form .btn,
+.empty-container .btn {
+  background-color: map-get($colors, $black);
+  border: 3px solid map-get($colors, $black);
+  color: map-get($colors, $white);
+  padding: 20px 30px;
+  margin: 20px 0;
+  width: 20%;
+
+  font-weight: 200;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+
+  transition: 0.3s;
+}
+.createblog-container .form .btn:hover,
+.empty-container .btn:hover {
+  background-color: transparent;
+  border: 3px solid map-get($colors, $black);
+  color: map-get($colors, $black) !important;
+
+  font-weight: 500;
+}
+
+input:focus,
+textarea:focus {
+  border: none;
+  outline: 0;
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.4);
+}
+
+.blog-title {
+  font-size: 3rem;
+}
+.blog-body,
+.post-container a {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: map-get($colors, $gray-200);
+  letter-spacing: 2px;
+}
+
+.blog-date {
+  font-weight: 1rem;
+  font-style: italic;
+  font-weight: 200;
+  color: map-get($colors, $gray-200);
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+//Posts
+.posts-container .blog-body a,
+.post-container a {
+  text-decoration: none;
+  color: map-get($colors, $yellow-200);
+}
+
+//Empty
+
+.empty-container h3 {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+//ERROR
+
+.error-container {
+  text-align: center;
+  color: rgb(231, 111, 111);
+}
+
+.error-container a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
