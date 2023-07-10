@@ -1,5 +1,5 @@
 {
-  "homepage": "https://lanoriesta.github.io",
+  "homepage": "https://lanoriesta.github.io/*",
   "name": "todolist",
   "private": true,
   "version": "0.0.0",
