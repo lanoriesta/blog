@@ -6,7 +6,7 @@ const Header = () => {
     <div className="header-container">
       <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container">
-          <Link to="/">
+          <Link to="BLOG">
             <img src={blogLogo} alt="blog-logo" />
           </Link>
           <button

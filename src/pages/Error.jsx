@@ -5,7 +5,7 @@ const Error = () => {
   return (
     <div className="error-container">
       <h1>Page Not Found</h1>
-      <Link to="/">Back to Homepage</Link>
+      <Link to="BLOG">Back to Homepage</Link>
     </div>
   );
 };
