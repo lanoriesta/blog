@@ -27,7 +27,7 @@ import PostLayout from "./layout/PostLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="BLOG" element={<RootLayout />}>
+    <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="createblog" element={<CreateBlog />} />
       <Route path="posts" element={<PostLayout />}>
